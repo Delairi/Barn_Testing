@@ -4,10 +4,10 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import glbModel from "./assets/Barn_Testing.glb";
 function App() {
-  t
+  
   const Modelo = useRef();
   const scene = new THREE.Scene();
-  const camera = new THREE.PerspeciveCamera(
+  const camera = new THREE.PerspectiveCamera(
     75,
     window.innerWidth / window.innerHeight,
     0.1,
